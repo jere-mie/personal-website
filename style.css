@@ -5,4 +5,18 @@
 
 .center{
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.hoverbtn{
+  color:black;
+  background-color:white;
+  border-color: white;
+}
+
+.hoverbtn:hover{
+  color:white;
+  background-color: black;
+  border-color: white;
 }
