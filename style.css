@@ -24,3 +24,7 @@ html {
   background-color: black;
   border-color: white;
 }
+
+.delayed{
+  animation-delay: 500ms;
+}
