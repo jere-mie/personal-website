@@ -28,3 +28,7 @@ html {
 .delayed{
   animation-delay: 300ms;
 }
+
+.white{
+  color: white;
+}
