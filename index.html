@@ -1,242 +1,262 @@
 <!DOCTYPE html>
-<!-- https://getbootstrap.com/docs/4.4/components/alerts/ -->
-<!-- Testing this comment -->
 <html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158088062-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-158088062-1');
-    </script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158088062-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    gtag('config', 'UA-158088062-1');
+  </script>
 
-    <meta property="og:site_name" content="Jeremie Bornais" />
-    <meta property="og:title" content="Jeremie Bornais" />
-    <meta property="og:description" content="Computer Science Student at the University of Windsor" />
-    <meta property="og:image" content="images/me.png" />
-    <meta property="og:type" content="website" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
 
-    <title>Jeremie Bornais</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
-  </head>
+  <meta property="og:site_name" content="Jeremie Bornais" />
+  <meta property="og:title" content="Jeremie Bornais" />
+  <meta property="og:description" content="Computer Science Student at the University of Windsor" />
+  <meta property="og:image" content="https://f.m.bornais.ca/logo.png" />
+  <meta property="og:type" content="website" />
+
+  <title>Jeremie Bornais</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+</head>
 
 
-  <body class="darkbg">
-  
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
-      <a class="navbar-brand" href="#" style="font-family: courier"> <img src="images/dark.png" height="60px;" style="padding-right: 15px;" class="animated infinite slow pulse">Jeremie Bornais</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav" style="font-family:courier">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Bornais_Jeremie_Resume.pdf" target="_blank">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://ca.linkedin.com/in/jeremie-bornais-271aa5143/">LinkedIn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://github.com/jere-mie/">GitHub</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <br><br><br><br><br>
-    <div class="jumbotron wow fadeIn delayed " style="color:white; background-color: black">
-      
-      <div class="container">
-      <h5 class="lead center animated slow rollIn">Hello, I'm</h1>
-      <h1 class="display-4 center animated slow delay-1s rollIn" style="font-size: 500%;">Jeremie Bornais</h1>
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <p class="lead center animated slow delay-1s rollIn">I am a third year computer science student at the University of Windsor, pursuing a career in software development.</p>
-          
-        </div>
-      </div>
-      <hr class="my-4">
-      <p class="center animated slow delay-1s rollIn">
-        <a class="btn btn-outline-light hoverbtn animated infinite slow pulse" href="mailto:jeremiejbornais@gmail.com">Let's Chat</a>
-      </p>
-      <br><br>
-      <p class="center animated slow delay-1s rollIn"><img src="https://cdn.freebiesupply.com/logos/large/2x/replit-logo-black-and-white.png" height="40px" class="animated infinite slow pulse"</p>
-          <p class="small lead center animated slow delay-1s rollIn">This website placed 3rd place in the <a href="https://repl.it/talk/announcements/aboutyouWinner-announcement/27453" style="color:white">Repl.it about:you contest</a></p>
-      
-      </div>
+<body class="darkbg">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
+    <a class="navbar-brand" href="#" style="font-family: courier"> <img src="images/dark.png" height="60px;"
+        style="padding-right: 15px;" class="animated infinite slow pulse">Jeremie Bornais</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" style="font-family:courier">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Bornais_Jeremie_Resume.pdf" target="_blank">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://ca.linkedin.com/in/jeremie-bornais/">LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://github.com/jere-mie/">GitHub</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
-    
-    <br id="about"><br><br><br><br><br><br><br><br>
-    
-    <div class="darkbg" >
-      <div class="container">
-        <h1 class="display-4 center wow fadeIn delayed ">About Me</h1>
-        <br>
-        <h2 class="center wow fadeIn delayed " style="font-size: 200%;">Personal</h2>
-        <div class="row wow fadeIn delayed ">
-          <div class="col-md-6">
-              <p style="text-align: center;">
-                  <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq1" role="button" aria-expanded="false" aria-controls="collapseExample" style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
-                    Education
-                  </a>
-              </p>
-              <div class="collapse" id="faq1">
-                  <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-                    <h2>University of Windsor</h2>
-                    <h6>September 2019 - May 2023</h6>
-                    <h6>B.C.S Computer Science (honours)</h6>
-                    <ul>
-                      <li>Recipient of the President’s Renewable Scholarship, Eleanor Catherine Wallace Memorial Scholarship and <a href="awards/12/foresters.pdf" target="_blank">Foresters Competitive Scholarship</a></li>
-                      <li>98.625% Major Average, 97.467% Cumulative Average</li>
-                      <li>Outstanding Scholars Member</li>
-                    </ul>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-6">
-              <p style="text-align: center;">
-                  <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq2" role="button" aria-expanded="false" aria-controls="collapseExample" style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
-                    Skills
-                  </a>
-              </p>
-              <div class="collapse" id="faq2">
-                  <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <h6>Programming</h6>
-                          <ul>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>JavaScript</li>
-                            <li>C</li>
-                            <li>Ruby</li>
-                            <li>Turing</li>
-                          </ul>        
-                        </div>
-                        <div class="col-md-6">
-                          <h6>Web</h6>
-                          <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Bootstrap</li>
-                            <li>Wordpress</li>
-                            <li>Flask</li>
-                          </ul>    
-                        </div>
-                        <div class="col-md-6">
-                          <h6>Technologies</h6>
-                          <ul>
-                            <li>Git</li>
-                            <li>Linux</li>
-                            <li>Firebase</li>
-                          </ul>    
-                        </div>
-                        <div class="col-md-6">
-                          <h6>Languages</h6>
-                          <ul>
-                            <li>English (Native)</li>
-                            <li>French (<a href="awards/12/DELF.pdf" target="_blank">DELF B1</a>)</li>
-                          </ul>    
-                        </div>
-                      </div>
-                      
-                  </div>
-              </div>
+  </nav>
+  <br><br><br><br><br>
+  <div class="jumbotron wow fadeIn delayed " style="color:white; background-color: black">
+
+    <div class="container">
+      <h5 class="lead center animated slow rollIn">Hello, I'm</h1>
+        <h1 class="display-4 center animated slow delay-1s rollIn" style="font-size: 500%;">Jeremie Bornais</h1>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <p class="lead center animated slow delay-1s rollIn">I am a fourth year computer science student at the
+              University of Windsor, pursuing a career in software development.</p>
+
           </div>
         </div>
-        <br><br><br>
-        <h2 class="center wow fadeIn delayed " style="font-size: 200%;">Extracurricular Activity</h2>
-        <div class="row wow fadeIn delayed ">
-          <div class="col-md-6">
-              <p style="text-align: center;">
-                  <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq3" role="button" aria-expanded="false" aria-controls="collapseExample" style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
-                    UWindsor Computer Science Society
-                  </a>
-              </p>
-              <div class="collapse" id="faq3">
-                  <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-                    <h2>President</h2>
-                    <h6>May 2021 - Present</h6>
-                    <small>Also:</small>
-                    <small>Vice President (May 2020 - May 2021)</small>
-                    <small>First Year Representative (Dec. 2019 - May 2020)</small>
-                    <ul>
-                      <li>Elected by fellow students to represent them and communicate their views and concerns</li>
-                      <li>Holding regular, open office hours for fellow students</li>
-                      <li>Assisting with organizing events, including the <a href="awards/competitions/HashCode2020.pdf" target="_blank">Google HashCode</a> Qualifier Round (2020)</li>
-                    </ul>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-6">
-              <p style="text-align: center;">
-                  <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq4" role="button" aria-expanded="false" aria-controls="collapseExample" style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
-                    WinHacks
-                  </a>
-              </p>
-              <div class="collapse" id="faq4">
-                <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-                  <h2>Co-Founder & Web Designer</h2>
-                  <h6>November 2019 - Present</h6>
-                  <ul>
-                    <li>Responsible for contributing to front-end development of <a href="https://winhacks.ca">website</a href="https://winhacks.ca"> using HTML, CSS, and Bootstrap</li>
-                    <li>Responsible for creating and managing the application system</li>
-                    <li>Creation of email routing system using Mailgun</li>
-                  </ul>
-              </div>
+        <hr class="my-4">
+        <p class="center animated slow delay-1s rollIn">
+          <a class="btn btn-outline-light hoverbtn animated infinite slow pulse" href="mailto:jeremie@bornais.ca">Let's
+            Chat</a>
+        </p>
+        <br><br>
+        <p class="center animated slow delay-1s rollIn"><img
+            src="https://cdn.freebiesupply.com/logos/large/2x/replit-logo-black-and-white.png" height="40px"
+            class="animated infinite slow pulse" /></p>
+    </div>
+  </div>
+
+  <br id="about"><br><br><br><br><br><br><br><br>
+
+  <div class="darkbg">
+    <div class="container">
+      <h1 class="display-4 center wow fadeIn delayed ">About Me</h1>
+      <br>
+      <h2 class="center wow fadeIn delayed " style="font-size: 200%;">Personal</h2>
+      <div class="row wow fadeIn delayed ">
+        <div class="col-md-6">
+          <p style="text-align: center;">
+            <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq1" role="button"
+              aria-expanded="false" aria-controls="collapseExample"
+              style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
+              Education
+            </a>
+          </p>
+          <div class="collapse" id="faq1">
+            <div class="card card-body" style="color:white; background-color:black; border-color:white;">
+              <h2>University of Windsor</h2>
+              <h6>September 2019 - May 2023</h6>
+              <h6>B.C.S Computer Science (honours)</h6>
+              <ul>
+                <li>Recipient of the President's Renewable Scholarship, Eleanor Catherine Wallace Memorial Scholarship
+                  and <a href="awards/12/foresters.pdf" target="_blank">Foresters Competitive Scholarship</a></li>
+                <li>98.625% Major Average, 97.467% Cumulative Average</li>
+                <li>Outstanding Scholars Member</li>
+              </ul>
             </div>
           </div>
+        </div>
+        <div class="col-md-6">
+          <p style="text-align: center;">
+            <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq2" role="button"
+              aria-expanded="false" aria-controls="collapseExample"
+              style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
+              Skills
+            </a>
+          </p>
+          <div class="collapse" id="faq2">
+            <div class="card card-body" style="color:white; background-color:black; border-color:white;">
+              <div class="row">
+                <div class="col-md-6">
+                  <h6>Programming</h6>
+                  <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>C</li>
+                    <li>Ruby</li>
+                    <li>Turing</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h6>Web</h6>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>Wordpress</li>
+                    <li>Flask</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h6>Technologies</h6>
+                  <ul>
+                    <li>Git</li>
+                    <li>Linux</li>
+                    <li>Firebase</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h6>Languages</h6>
+                  <ul>
+                    <li>English (Native)</li>
+                    <li>French (<a href="awards/12/DELF.pdf" target="_blank">DELF B1</a>)</li>
+                  </ul>
+                </div>
+              </div>
 
-          <div class="col-md-6">
-            <p style="text-align: center;">
-                <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq5" role="button" aria-expanded="false" aria-controls="collapseExample" style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
-                  UWindsor Robotics & Tech
-                </a>
-            </p>
-            <div class="collapse" id="faq5">
-              <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-                <h2>Member</h2>
-                <h6>January 2020 - Present</h6>
-                <ul>
-                  <li>Creation of GitHub organization and <a href="http://robotics.uwindsor.xyz">website</a></li>
-                  <li>Designed the current logo</li>
-                  <li>Learning the fundamentals of connecting software to hardware</li>
-                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <h2 class="center wow fadeIn delayed " style="font-size: 200%;">Extracurricular Activity</h2>
+      <div class="row wow fadeIn delayed ">
+        <div class="col-md-6">
+          <p style="text-align: center;">
+            <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq3" role="button"
+              aria-expanded="false" aria-controls="collapseExample"
+              style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
+              UWindsor Computer Science Society
+            </a>
+          </p>
+          <div class="collapse" id="faq3">
+            <div class="card card-body" style="color:white; background-color:black; border-color:white;">
+              <h2>President</h2>
+              <h6>May 2021 - Present</h6>
+              <small>Also:</small>
+              <small>Vice President (May 2020 - May 2021)</small>
+              <small>First Year Representative (Dec. 2019 - May 2020)</small>
+              <ul>
+                <li>Elected by fellow students to represent them and communicate their views and concerns</li>
+                <li>Holding regular, open office hours for fellow students</li>
+                <li>Assisting with organizing events, including the <a href="awards/competitions/HashCode2020.pdf"
+                    target="_blank">Google HashCode</a> Qualifier Round (2020)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p style="text-align: center;">
+            <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq4" role="button"
+              aria-expanded="false" aria-controls="collapseExample"
+              style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
+              WinHacks
+            </a>
+          </p>
+          <div class="collapse" id="faq4">
+            <div class="card card-body" style="color:white; background-color:black; border-color:white;">
+              <h2>Co-Founder & Web Designer</h2>
+              <h6>November 2019 - Present</h6>
+              <ul>
+                <li>Responsible for contributing to front-end development of <a href="https://winhacks.ca">website</a
+                    href="https://winhacks.ca"> using HTML, CSS, and Bootstrap</li>
+                <li>Responsible for creating and managing the application system</li>
+                <li>Creation of email routing system using Mailgun</li>
+              </ul>
             </div>
           </div>
         </div>
 
         <div class="col-md-6">
           <p style="text-align: center;">
-              <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq6" role="button" aria-expanded="false" aria-controls="collapseExample" style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
-                A-Team Robotics
-              </a>
+            <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq5" role="button"
+              aria-expanded="false" aria-controls="collapseExample"
+              style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
+              UWindsor Robotics & Tech
+            </a>
+          </p>
+          <div class="collapse" id="faq5">
+            <div class="card card-body" style="color:white; background-color:black; border-color:white;">
+              <h2>Member</h2>
+              <h6>January 2020 - Present</h6>
+              <ul>
+                <li>Creation of GitHub organization and <a href="http://robotics.uwindsor.xyz">website</a></li>
+                <li>Designed the current logo</li>
+                <li>Learning the fundamentals of connecting software to hardware</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <p style="text-align: center;">
+            <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq6" role="button"
+              aria-expanded="false" aria-controls="collapseExample"
+              style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
+              A-Team Robotics
+            </a>
           </p>
           <div class="collapse" id="faq6">
             <div class="card card-body" style="color:white; background-color:black; border-color:white;">
@@ -247,238 +267,142 @@
                 <li>Helped troubleshoot domain issues for the website</li>
                 <li>Creation of GitHub organization</li>
               </ul>
-          </div>
-        </div>
-      </div>
-
-
-        </div>
-        <br><br><br>
-        <h2 class="center wow fadeIn delayed " style="font-size: 200%;">Competitions and Hackathons</h2>
-        <div class="row wow fadeIn delayed ">
-
-          <div class="col-md-6">
-            <p style="text-align: center;">
-              <a class="btn btn-outline-light center" data-toggle="collapse" href="#comp1" role="button" aria-expanded="false" aria-controls="collapseExample" style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
-                Coding Competitions
-              </a>
-            </p>
-            <div class="collapse" id="comp1">
-              <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-                <ul>
-                  <li>Google Kickstart Round F (2020)</li>
-                  <li>Google Kickstart Round E (2020)</li>
-                  <li>Google Kickstart Round D (2020)</li>
-                  <li>Google Kickstart Round C (2020)</li>
-                  <li>Google Kickstart <a href="awards/competitions/KickStartB2020.pdf" target="_blank">Round B</a> (2020)</li>
-                  <li>Google Kickstart <a href="awards/competitions/KickStartA2020.pdf" target="_blank">Round A</a> (2020)</li>
-                  <li>Google Code Jam <a href="awards/competitions/CodeJam2020.pdf" target="_blank">Qualifier</a> (2020)</li>
-                  <li>Google Hash Code (Participant and <a href="awards/competitions/HashCode2020.pdf" target="_blank">Hub Organiser</a>) (2020)</li>
-                  <li>Communitech <a href="awards/competitions/CodeToWin2.pdf"  target="_blank">Code to Win</a> (2019)</li>
-                  <li>Google Kickstart <a href="awards/competitions/KickStartF2019.pdf" target="_blank">Round F</a> (2019)</li>
-                </ul>
-              </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <p style="text-align: center;">
-              <a class="btn btn-outline-light center" data-toggle="collapse" href="#comp2" role="button" aria-expanded="false" aria-controls="collapseExample" style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
-                Hackathons
-              </a>
-            </p>
-            <div class="collapse" id="comp2">
-              <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-                <ul>
-                  <li>Hacklarious (2020)</li>
-                    <ul>
-                      <li><a href="http://devpost.com/software/meme-bot" target="_blank">First Place</a> for overall best hack</li>
-                      <li><a href="http://devpost.com/software/meme-bot" target="_blank">Winner</a> of longest tech stack</li>
-                    </ul>
-                  <li>CatHacks VI (2020)</li>
-                    <ul><li><a href="awards/competitions/CatHacksAward.pdf" target="_blank">Winner</a> of best domain registered with Domain.com</li></ul>
-                  <li>HackDSC (2020)</li>
-                    <ul><li>Winner of best domain registered with Domain.com</li></ul>
-                  <li>DeltaHacks VI (2020)</li>
-                  <li>TOHacks (2020)</li>
-                  <li>Oxford Hack (2020)</li>
-                  <li>Hack at home (2020)</li>
-                  <li>WinHacks I (Co-Founder, web designer, and organiser) (2020)</li>
-                  <li>MasseyHacks VI (Mentor) (2020)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <br><br><br>
-
-        <h2 class="center wow fadeIn delayed " style="font-size: 200%;">Awards & Honours</h2>
-        <h4 class="center wow fadeIn delayed " >High School</h2>
-        <div class="row wow fadeIn delayed ">
-
-          <div class="col-md-3">
-            <p style="text-align: center;">
-              <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq7" role="button" aria-expanded="false" aria-controls="collapseExample" style="display:inline-block; width: 95%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
-                Grade 9
-              </a>
-            </p>
-            <div class="collapse" id="faq7">
-              <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-                <ul>
-                  <li>Top Dog Award (Highest Grade Average)</li>
-                  <li>University of Waterloo Math Contest: Highest Score in School</li>
-                </ul>
-                <h6>Subject Awards</h6>
-                <ul>
-                  <li><a href="awards/9/SNC1D.pdf" target="_blank">SNC1D</a>: Science</li>
-                  <li><a href="awards/9/MPM1D.pdf" target="_blank">MPM1D</a>: Principles of Mathematics</li>
-                  <li><a href="awards/9/FSF1DC.pdf" target="_blank">FSF1DC</a>: French</li>
-                  <li><a href="awards/9/AMR1O.pdf" target="_blank">AMR1O</a>: Repertoire</li>
-                  <li><a href="awards/9/AMI1O.pdf" target="_blank">AMI1O</a>: Music</li>
-                  <li><a href="awards/9/ENG1D.pdf" target="_blank">ENG1D</a>: English</li>
-                  <li><a href="awards/9/CGC1D.pdf" target="_blank">CGC1D</a>: Geography</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-<div class="col-md-3">
-            <p style="text-align: center;">
-              <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq8" role="button" aria-expanded="false" aria-controls="collapseExample" style="display:inline-block; width: 95%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
-                Grade 10
-              </a>
-            </p>
-            <div class="collapse" id="faq8">
-              <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-                <ul>
-                  <li>Top Dog Award (Highest Grade Average)</li>
-                </ul>
-                <h6>Subject Awards</h6>
-                <ul>
-                  <li><a href="awards/10/SNC2D.pdf" target="_blank">SNC2D</a>: Science</li>
-                  <li><a href="awards/10/CHV2OH.pdf" target="_blank">CHV2OH</a>: Civics</li>
-                  <li><a href="awards/10/MPM2D.pdf" target="_blank">MPM2D</a>: Principles of Mathematics</li>
-                  <li><a href="awards/10/AMI2O.pdf" target="_blank">AMI2O</a>: Music</li>
-                  <li><a href="awards/10/TDJ2O.pdf" target="_blank">TDJ2O</a>: Technological Design</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-<div class="col-md-3">
-            <p style="text-align: center;">
-              <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq9" role="button" aria-expanded="false" aria-controls="collapseExample" style="display:inline-block; width: 95%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
-                Grade 11
-              </a>
-            </p>
-            <div class="collapse" id="faq9">
-              <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-                <ul>
-                  <li>Top Dog Award (Highest Grade Average)</li>
-                  <li>University of Waterloo Math Contest: Highest Score in School</li>
-                </ul>
-                <h6>Subject Awards</h6>
-                <ul>
-                  <li><a href="awards/11/ENG3U.pdf" target="_blank">ENG3U</a>: English</li>
-                  <li><a href="awards/11/MCR3U.pdf" target="_blank">MCR3U</a>: Functions</li>
-                  <li><a href="awards/11/FSF3UC.pdf" target="_blank">FSF3UC</a>: French</li>
-                  <li><a href="awards/11/SBI3U.pdf" target="_blank">SBI3U</a>: Biology</li>
-                  <li><a href="awards/11/SCH3U.pdf" target="_blank">SCH3U</a>: Chemistry</li>
-                  <li><a href="awards/11/SPH3U.pdf" target="_blank">SPH3U</a>: Physics</li>
-                  <li><a href="awards/11/ICS3U.pdf" target="_blank">ICS3U</a>: Computer Science</li>
-                  <li><a href="awards/11/AMR3M.pdf" target="_blank">AMR3M</a>: Repertoire</li>
-                  <li><a href="awards/11/AMI3M.pdf" target="_blank">AMI3M</a>: Music</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-<div class="col-md-3">
-            <p style="text-align: center;">
-              <a class="btn btn-outline-light center" data-toggle="collapse" href="#faq10" role="button" aria-expanded="false" aria-controls="collapseExample" style="display:inline-block; width: 95%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
-                Grade 12
-              </a>
-            </p>
-            <div class="collapse" id="faq10">
-              <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-                <ul>
-                  <li><a href="awards/12/GovernorGeneral.pdf" target="_blank">Governor General's Medallion</a> (Highest Graduating Average)</li>
-                  <li>Top Dog Award (Highest Grade Average)</li>
-                  <li>University of Waterloo Math Contest: Highest Score in School</li>
-                </ul>
-                <h6>Subject Awards</h6>
-                <ul>
-                  <li><a href="awards/12/ENG4U.pdf" target="_blank">ENG4U</a>: English</li>
-                  <li><a href="awards/12/MCV4U.pdf" target="_blank">MCV4U</a>: Calculus and Vectors</li>
-                  <li><a href="awards/12/MHF4U.pdf" target="_blank">MHF4U</a>: Advanced Functions</li>
-                  <li><a href="awards/12/SPH4U.pdf" target="_blank">SPH4U</a>: Physics</li>
-                  <li><a href="awards/12/SCH4U.pdf" target="_blank">SCH4U</a>: Chemistry</li>
-                  <li><a href="awards/12/FSF4UC.pdf" target="_blank">FSF4UC</a>: French</li>
-                  <li><a href="awards/12/MDM4U.pdf" target="_blank">MDM4U</a>: Data Management</li>
-                  <li><a href="awards/12/AMR4M.pdf" target="_blank">AMR4M</a>: Repertoire</li>
-                  <li><a href="awards/12/ICS4U.pdf" target="_blank">ICS4U</a>: Computer Science</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
         </div>
 
 
       </div>
-    </div>
+      <br><br><br>
+      <h2 class="center wow fadeIn delayed " style="font-size: 200%;">Competitions and Hackathons</h2>
+      <div class="row wow fadeIn delayed ">
 
-
-    <br id="projects"><br><br><br><br><br><br><br><br>
-
-    <div class="container">
-      <h1 class="display-4 center wow fadeIn delayed ">Projects</h1>
-      <br><br>
-          <h2 class="center wow fadeIn delayed ">Check Out The Websites I've built</h2>
-          <p class="center wow fadeIn delayed ">
-            <a class="btn btn-outline-light hoverbtn animated infinite slow pulse center" href="sites.html">My Websites</a>
+        <div class="col-md-6">
+          <p style="text-align: center;">
+            <a class="btn btn-outline-light center" data-toggle="collapse" href="#comp1" role="button"
+              aria-expanded="false" aria-controls="collapseExample"
+              style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
+              Coding Competitions
+            </a>
           </p>
-          <br><br>
-    </div>
-
-
-    <br id="contact"><br><br><br><br><br><br><br><br>
-
-    <div class="container">
-      <h1 class="display-4 center wow fadeIn delayed ">Contact Me</h1>
-      <br><br>
-          <h2 class="center wow fadeIn delayed ">Shoot Me an Email</h2>
-          <p class="center wow fadeIn delayed ">
-            <a class="btn btn-outline-light hoverbtn animated infinite slow pulse center" href="mailto:jeremiejbornais@gmail.com">jeremiejbornais@gmail.com</a>
+          <div class="collapse" id="comp1">
+            <div class="card card-body" style="color:white; background-color:black; border-color:white;">
+              <ul>
+                <li>Google Kickstart Round F (2020)</li>
+                <li>Google Kickstart Round E (2020)</li>
+                <li>Google Kickstart Round D (2020)</li>
+                <li>Google Kickstart Round C (2020)</li>
+                <li>Google Kickstart <a href="awards/competitions/KickStartB2020.pdf" target="_blank">Round B</a> (2020)
+                </li>
+                <li>Google Kickstart <a href="awards/competitions/KickStartA2020.pdf" target="_blank">Round A</a> (2020)
+                </li>
+                <li>Google Code Jam <a href="awards/competitions/CodeJam2020.pdf" target="_blank">Qualifier</a> (2020)
+                </li>
+                <li>Google Hash Code (Participant and <a href="awards/competitions/HashCode2020.pdf" target="_blank">Hub
+                    Organiser</a>) (2020)</li>
+                <li>Communitech <a href="awards/competitions/CodeToWin2.pdf" target="_blank">Code to Win</a> (2019)</li>
+                <li>Google Kickstart <a href="awards/competitions/KickStartF2019.pdf" target="_blank">Round F</a> (2019)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p style="text-align: center;">
+            <a class="btn btn-outline-light center" data-toggle="collapse" href="#comp2" role="button"
+              aria-expanded="false" aria-controls="collapseExample"
+              style="display:inline-block; width: 80%; margin-top: 20px; padding-top: 10px; padding-bottom: 10px;">
+              Hackathons
+            </a>
           </p>
-          <br><br>
-    </div>
-
-
-
-    <br><br><br><br><br><br><br><br><br>
-    <div class="darkbg">
-      <div class="container">
-        <p class="center animated infinite slow pulse">Jeremie Bornais 2021</p>
+          <div class="collapse" id="comp2">
+            <div class="card card-body" style="color:white; background-color:black; border-color:white;">
+              <ul>
+                <li>Hacklarious (2020)</li>
+                <ul>
+                  <li><a href="http://devpost.com/software/meme-bot" target="_blank">First Place</a> for overall best
+                    hack</li>
+                  <li><a href="http://devpost.com/software/meme-bot" target="_blank">Winner</a> of longest tech stack
+                  </li>
+                </ul>
+                <li>CatHacks VI (2020)</li>
+                <ul>
+                  <li><a href="awards/competitions/CatHacksAward.pdf" target="_blank">Winner</a> of best domain
+                    registered with Domain.com</li>
+                </ul>
+                <li>HackDSC (2020)</li>
+                <ul>
+                  <li>Winner of best domain registered with Domain.com</li>
+                </ul>
+                <li>DeltaHacks VI (2020)</li>
+                <li>TOHacks (2020)</li>
+                <li>Oxford Hack (2020)</li>
+                <li>Hack at home (2020)</li>
+                <li>WinHacks I (Co-Founder, web designer, and organiser) (2020)</li>
+                <li>MasseyHacks VI (Mentor) (2020)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
+      <br><br><br>
     </div>
-    <!--Scripts: DO NOT TOUCH!-->
-    <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-    
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
-    <script>
-        var wow = new WOW(
+
+  <br id="projects"><br><br><br><br><br><br><br><br>
+
+  <div class="container">
+    <h1 class="display-4 center wow fadeIn delayed ">Projects</h1>
+    <br><br>
+    <h2 class="center wow fadeIn delayed ">Check out some of my project by heading to my GitHub profile.</h2>
+    <p class="center wow fadeIn delayed ">
+      <a class="btn btn-outline-light hoverbtn animated infinite slow pulse center"
+        href="https://github.com/jere-mie">jere-mie</a>
+    </p>
+    <br><br>
+  </div>
+
+
+  <br id="contact"><br><br><br><br><br><br><br><br>
+
+  <div class="container">
+    <h1 class="display-4 center wow fadeIn delayed ">Contact Me</h1>
+    <br><br>
+    <h2 class="center wow fadeIn delayed ">Shoot Me an Email</h2>
+    <p class="center wow fadeIn delayed ">
+      <a class="btn btn-outline-light hoverbtn animated infinite slow pulse center"
+        href="mailto:jeremie@bornais.ca">jeremie@bornais.ca</a>
+    </p>
+    <br><br>
+  </div>
+
+
+
+  <br><br><br><br><br><br><br><br><br>
+  <div class="darkbg">
+    <div class="container">
+      <p class="center animated infinite slow pulse">Jeremie Bornais 2022</p>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+    integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+  <script>
+    var wow = new WOW(
       {
-        boxClass:     'wow',      // animated element css class (default is wow)
+        boxClass: 'wow',      // animated element css class (default is wow)
         animateClass: 'animated', // animation css class (default is animated)
-        offset:       0,          // distance to the element when triggering the animation (default is 0)
-        mobile:       true,       // trigger animations on mobile devices (default is true)
-        live:         true,       // act on asynchronously loaded content (default is true)
-        callback:     function(box) {
+        offset: 0,          // distance to the element when triggering the animation (default is 0)
+        mobile: true,       // trigger animations on mobile devices (default is true)
+        live: true,       // act on asynchronously loaded content (default is true)
+        callback: function (box) {
           // the callback is fired every time an animation is started
           // the argument that is passed in is the DOM node being animated
         },
@@ -486,6 +410,7 @@
       }
     );
     wow.init();  
-    </script>  
-  </body>
+  </script>
+</body>
+
 </html>
