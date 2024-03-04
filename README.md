@@ -8,12 +8,12 @@ Follow these steps to get started with Tobias Smith's personal website:
 
 1. **Clone the Repository**: 
    ```
-   git clone https://github.com/jere-mie/about-you.git
+   git clone https://github.com/jere-mie/personal-website.git
    ```
 
 2. **Navigate to the Project Directory**: 
    ```
-   cd about-you
+   cd personal-website
    ```
 
 3. **Install Dependencies**: 
