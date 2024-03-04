@@ -1,320 +1,245 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158088062-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremie Bornais</title>
 
-    gtag('config', 'UA-158088062-1');
-  </script>
+    <meta property="og:site_name" content="Jeremie Bornais" />
+    <meta property="og:title" content="Jeremie Bornais" />
+    <meta property="og:description" content="I build software to enable people to live their best lives" />
+    <meta property="og:image" content="https://f.m.bornais.ca/logo.png" />
+    <meta property="og:type" content="website" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-  <meta property="og:site_name" content="Jeremie Bornais" />
-  <meta property="og:title" content="Jeremie Bornais" />
-  <meta property="og:description" content="I build software to enable people to live their best lives" />
-  <meta property="og:image" content="https://f.m.bornais.ca/logo.png" />
-  <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="output.css">
 
-  <title>Jeremie Bornais</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="manifest" href="images/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158088062-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158088062-1');
+    </script>
 </head>
 
+<body>
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="Bornais_Jeremie_Resume.pdf" target="_none">Resume</a></li>
+                    <li><a href="https://www.linkedin.com/in/jeremie-bornais/" target="_none">LinkedIn</a></li>
+                    <li><a href="https://github.com/jere-mie" target="_none">GitHub</a></li>
+                    <li><a href="https://blog.bornais.ca" target="_none">Blog</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">Jeremie J Bornais</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg">
+                <li><a href="Bornais_Jeremie_Resume.pdf" target="_none">Resume</a></li>
+                <li><a href="https://www.linkedin.com/in/jeremie-bornais/" target="_none">LinkedIn</a></li>
+                <li><a href="https://github.com/jere-mie" target="_none">GitHub</a></li>
+                <li><a href="https://blog.bornais.ca" target="_none">Blog</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <label class="swap swap-rotate mx-8">
 
-<body class="darkbg">
+                <!-- this hidden checkbox controls the state -->
+                <input type="checkbox" class="theme-controller" value="light" />
 
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
-    <a class="navbar-brand" href="#" style="font-family: courier"> <img src="images/dark.png" height="60px;"
-        style="padding-right: 15px;" class="animated infinite slow pulse">Jeremie Bornais</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav" style="font-family:courier">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Bornais_Jeremie_Resume.pdf" target="_blank">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.linkedin.com/in/jeremie-bornais/">LinkedIn</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://github.com/jere-mie/">GitHub</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
+                <!-- sun icon -->
+                <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                </svg>
+
+                <!-- moon icon -->
+                <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                </svg>
+
+            </label>
+        </div>
     </div>
-  </nav>
-  <br><br><br><br><br>
-  <div class="jumbotron wow fadeIn delayed " style="color:white; background-color: black">
-
-    <div class="container">
-      <h5 class="lead center animated slow rollIn">Hello, I'm</h1>
-        <h1 class="display-4 center animated slow delay-1s rollIn" style="font-size: 500%;">Jeremie Bornais</h1>
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-8">
-            <p class="lead center animated slow delay-1s rollIn">I build software to enable people to live their best lives</p>
-
-          </div>
+    <div class="hero min-h-screen bg-base-300">
+        <div class="hero-content text-center">
+            <div class="max-w-3xl">
+                <p class="py-3">Hello, I'm</p>
+                <h1 class="text-7xl font-bold">Jeremie J Bornais</h1>
+                <p class="py-6">I build software to enable people to live their best lives</p>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
         </div>
-        <hr class="my-4">
-        <p class="center animated slow delay-1s rollIn">
-          <a class="btn btn-outline-light hoverbtn animated infinite slow pulse" href="mailto:jeremie@bornais.ca">Let's
-            Chat</a>
-        </p>
     </div>
-  </div>
-
-  <br id="about"><br><br><br><br><br><br><br>
-
-  <div class="container">
-    <h1 class="center wow fadeIn delayed display-4">Experience</h1>
-    <br><br>
-    <div class="row">
-      <div class="col-md-6 wow fadeIn delayed">
-        <br>
-        <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-          <h2>Publicis Sapient</h2>
-          <h4>Software Engineer Intern</h4>
-          <h6>June 2022 - August 2022</h6>
-          <ul>
-            <li>Created and deployed a <b>GraphQL</b> API using <b>Java, Spring Boot, and PostgreSQL</b></li>
-            <li>Used <b>GitHub Actions</b> to set up automated <b>CI/CD</b> workflows.</li>
-            <li>Used <b>Python</b> for sample data generation for testing.</li>
-          </ul>
+    <section id="experience" class="bg-base-200 p-16">
+        <h1 class="text-center text-4xl font-bold">Experience</h1>
+        <div class="flex flex-col py-16 lg:flex-row">
+            <!-- card -->
+            <div class="lg:w-1/3 lg:pr-2 py-4 lg:mx-4">
+                <div class="card bg-base-100 shadow-xl border border-base-200 h-full">
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">RIIS LLC</h2>
+                        <h3 class="text-2xl">Software Engineer</h3>
+                        <h4 class="text-lg">January 2024 - Present</h3>
+                            <ul class="list-disc">
+                                <li>Led development of a <strong>Python-based</strong> project as the sole
+                                    developer</li>
+                                <li>Designed and implemented a script resulting in a
+                                    <strong>33% workload reduction</strong>
+                                </li>
+                                <li>Effectively communicated and collaborated with stakeholders to define and refine
+                                    project goals</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end card -->
+            <!-- card -->
+            <div class="lg:w-1/3 lg:pr-2 py-4 lg:mx-4">
+                <div class="card bg-base-100 shadow-xl border border-base-200 h-full">
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Publicis Sapient</h2>
+                        <h3 class="text-2xl">Software Engineer</h3>
+                        <h4 class="text-lg">June 2022 - August 2022</h3>
+                            <ul class="list-disc">
+                                <li>Created and deployed a <strong>GraphQL</strong> API using <strong>Java, Spring Boot,
+                                        and PostgreSQL</strong></li>
+                                <li>Used GitHub Actions to set up automated CI/CD workflows</li>
+                                <li>Used Python for sample data generation for testing</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end card -->
+            <!-- card -->
+            <div class="lg:w-1/3 lg:pr-2 py-4 lg:mx-4">
+                <div class="card bg-base-100 shadow-xl border border-base-200 h-full">
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Assent Inc</h2>
+                        <h3 class="text-2xl">Software Engineer</h3>
+                        <h4 class="text-lg">January 2022 - April 2022</h3>
+                            <ul class="list-disc">
+                                <li>Used <strong>Angular and SCSS</strong> to create and update front-end components,
+                                    adhering to strict styling standards</li>
+                                <li>Used <strong>C# and .NET Core</strong> to create API endpoints, unit tests,
+                                    component tests, and integration tests</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end card -->
         </div>
-      </div>
-      <div class="col-md-6 wow fadeIn delayed">
-        <br>
-        <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-          <h2>Assent Inc</h2>
-          <h4>Software Developer Intern</h4>
-          <h6>January 2022 - April 2022</h6>
-          <ul>
-            <li>Used <b>Angular and SCSS</b> to create and update front-end components, adhering to strict styling standards.</li>
-            <li>Used <b>C# and .NET Core</b> to create API endpoints, unit tests, component tests, and integration tests.</li>
-          </ul>
+        <div class="flex flex-col lg:flex-row">
+            <!-- card -->
+            <div class="lg:w-1/3 lg:pr-2 py-4 lg:mx-4">
+                <div class="card bg-base-100 shadow-xl border border-base-200 h-full">
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Green Shield Canada</h2>
+                        <h3 class="text-2xl">Software Engineer</h3>
+                        <h4 class="text-lg">May 2021 - August 2021</h3>
+                            <ul class="list-disc">
+                                <li>Used <strong>Oracle PL/SQL</strong> to create Data Reports and Extracts</li>
+                                <li>Collaborated with Business analysts and clients to establish success criteria</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end card -->
+            <!-- card -->
+            <div class="lg:w-1/3 lg:pr-2 py-4 lg:mx-4">
+                <div class="card bg-base-100 shadow-xl border border-base-200 h-full">
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">University of Windsor</h2>
+                        <h3 class="text-2xl">Research Software Developer</h3>
+                        <h4 class="text-lg">June 2020 - April 2023</h3>
+                            <ul class="list-disc">
+                                <li>Developed a web application for the analysis and presentation of experimental SAS
+                                    data</li>
+                                <li>Achieved <strong>100X faster compute time</strong> of select elements</li>
+                                <li>Used <strong>Python, Flask, NumPy, SciPy, Bootstrap, and Matplotlib</strong></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end card -->
+            <!-- card -->
+            <div class="lg:w-1/3 lg:pr-2 py-4 lg:mx-4">
+                <div class="card bg-base-100 shadow-xl border border-base-200 h-full">
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">University of Windsor</h2>
+                        <h3 class="text-2xl">Teaching Assistant</h3>
+                        <h4 class="text-lg">September 2020 - June 2023</h3>
+                            <ul class="list-disc">
+                                <li>Responsible for lab instruction, marking, and holding office hours for <strong>4
+                                        core undergraduate courses</strong></li>
+                                <li><strong>Built and deployed</strong> a web application that automatically grades
+                                    assignments</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end card -->
         </div>
-      </div>
-      <div class="col-md-6 wow fadeIn delayed">
-        <br>
-        <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-          <h2>Green Shield Canada</h2>
-          <h4>Software Developer Intern</h4>
-          <h6>May 2021 - August 2021</h6>
-          <ul>
-            <li>Used <b>Oracle PL/SQL</b> to create Data Reports and Extracts</li>
-            <li>Led daily stand-up meetings</li>
-            <li>Collaborated with Business analysts and clients to establish success criteria</li>
-          </ul>
+    </section>
+    <section id="education" class="bg-base-300 p-16">
+        <h1 class="text-center text-4xl font-bold">Education</h1>
+        <div class="lg:flex py-16">
+            <div class="lg:w-1/2 p-4 bg-base-200 lg:mx-8 my-8 card shadow-xl border border-base-200">
+                <div class="card-body h-full">
+                    <h2 class="card-title text-3xl">University of Windsor</h2>
+                    <h3 class="text-2xl">B.CS Computer Science (honours)</h3>
+                    <h4 class="text-lg">September 2019 - October 2023</h3>
+                        <ul class="list-disc">
+                            <li>Recipient of the President's Renewable Scholarship, Eleanor Catherine Wallace
+                                Memorial
+                                Scholarship and Foresters Competitive Scholarship</li>
+                            <li><strong>97.4%</strong> Major Average, <strong>97.25%</strong> Cumulative Average</li>
+                            <li>Outstanding Scholars Graduate</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="lg:w-1/2 p-4 bg-base-200 lg:mx-8 my-8 card shadow-xl border border-base-200">
+                <div class="card-body h-full">
+                    <h2 class="card-title text-3xl">Business Career College</h2>
+                    <h3 class="text-2xl">Life License Qualification Program</h3>
+                    <h4 class="text-lg">August 2023 - October 2023</h3>
+                        <ul class="list-disc">
+                            <li>Completed the LLQP program to obtain my Ontario Life Insurance and Accident &
+                                Sickness Insurance licenses</li>
+                            <li><strong>93.75%</strong> Final Graduating Mark</li>
+                            <li>Studied Life Insurance, Accident & Sickness Insurance, Segregated Funds and
+                                Annuities, and Professional Practice</li>
+                        </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-6 wow fadeIn delayed">
-        <br>
-        <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-          <h2>University of Windsor</h2>
-          <h4>Research Software Developer</h4>
-          <h6>June 2020 - April 2023</h6>
-          <ul>
-            <li>Developed a <b>web application</b> for the analysis and presentation of experimental SAS data</li>
-            <li>Achieved <b>100X faster compute time</b> of select elements</li>
-            <li>Used <b>Python, Flask, Bootstrap, NumPy, SciPy, and Matplotlib</b></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-3"></div>
-      <div class="col-md-6 wow fadeIn delayed">
-        <br>
-        <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-          <h2>University of Windsor</h2>
-          <h4>Undergraduate Teaching Assistant</h4>
-          <h6>September 2020 - June 2023</h6>
-          <ul>
-            <li>Responsible for lab instruction, marking, and holding office hours for <b>4 core undergraduate courses</b></li>
-            <li><b>Built and deployed</b> a web application that automatically grades assignments</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <br><br><br><br><br><br><br><br><br>
-
-  <div class="container">
-    <h1 class="center wow fadeIn delayed display-4">Education</h1>
-    <br><br>
-    <div class="row">
-      <div class="col-md-6 wow fadeIn delayed">
-        <br>
-        <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-          <h2>University of Windsor</h2>
-          <h6>September 2019 - October 2023</h6>
-          <h6>B.CS Computer Science (honours)</h6>
-          <ul>
-            <li>Recipient of the President's Renewable Scholarship, Eleanor Catherine Wallace Memorial Scholarship
-              and Foresters Competitive Scholarship</li>
-            <li>97.4% Major Average, 97.25% Cumulative Average</li>
-            <li>Outstanding Scholars Graduate</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6 wow fadeIn delayed">
-        <br>
-        <div class="card card-body" style="color:white; background-color:black; border-color:white;">
-          <h2>Business Career College</h2>
-          <h6>August 2023 - October 2023</h6>
-          <h6>Life License Qualification Program</h6>
-          <ul>
-            <li>Completed the LLQP program to obtain my Ontario Life Insurance and Accident & Sickness Insurance licenses</li>
-            <li>93.75% Final Graduating Mark</li>
-            <li>Studied Life Insurance, Accident & Sickness Insurance, Segregated Funds and Annuities, and Professional Practice</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br><br><br><br><br><br><br><br><br>
-
-  <div class="container">
-    <h1 class="center wow fadeIn delayed display-4">Skills</h1>
-    <br><br>
-    <div class="row">
-      <div class="col-md wow fadeIn delayed">
-        <h4>Programming Languages</h4>
-        <ul>
-          <li>Python</li>
-          <li>JavaScript</li>
-          <li>Go</li>
-          <li>Java</li>
-          <li>C#</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SCSS</li>
-          <li>C++</li>
-          <li>SQL</li>
-          <li>C</li>
-          <li>Ruby</li>
-        </ul>
-      </div>
-      <div class="col-md wow fadeIn delayed">
-        <h4>Libraries & Frameworks</h4>
-        <ul>
-          <li>Flask</li>
-          <li>React Native</li>
-          <li>Svelte</li>
-          <li>Angular</li>
-          <li>React.js</li>
-          <li>Gin</li>
-          <li>.NET Core</li>
-          <li>Spring Boot</li>
-          <li>Bootstrap</li>
-          <li>Ruby on Rails</li>
-        </ul>
-      </div>
-      <div class="col-md wow fadeIn delayed">
-        <h4>Technologies</h4>
-        <ul>
-          <li>Git</li>
-          <li>Linux</li>
-          <li>Docker</li>
-          <li>Caddy Server</li>
-          <li>GraphQL</li>
-          <li>REST API</li>
-          <li>OAuth2</li>
-          <li>CI/CD</li>
-          <li>GitHub Actions</li>
-        </ul>
-      </div>
-      <div class="col-md wow fadeIn delayed">
-        <h4>Cloud</h4>
-        <ul>
-          <li>Google Cloud Platform</li>
-          <li>Microsoft Azure</li>
-          <li>DigitalOcean</li>
-          <li>Heroku</li>
-        </ul>
-      </div>
-      <div class="col-md wow fadeIn delayed">
-        <h4>Spoken Languages</h4>
-        <ul>
-          <li>English (Fluent)</li>
-          <li>French (DELF B1 Certified)</li>
-        </ul>
-      </div>
-    </div>
-    <br><br>
-  </div>
-
-  <br id="contact"><br><br><br><br><br><br><br><br>
-
-  <div class="container">
-    <h1 class="display-4 center wow fadeIn delayed ">Contact Me</h1>
-    <br><br>
-    <h2 class="center wow fadeIn delayed ">Shoot Me an Email</h2>
-    <p class="center wow fadeIn delayed ">
-      <a class="btn btn-outline-light hoverbtn animated infinite slow pulse center"
-        href="mailto:jeremie@bornais.ca">jeremie@bornais.ca</a>
-    </p>
-    <br><br>
-  </div>
-
-
-
-  <br><br><br><br><br><br><br><br><br>
-  <div class="darkbg">
-    <div class="container">
-      <p class="center animated infinite slow pulse">Jeremie Bornais 2023</p>
-    </div>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
-    integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-    integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
-  <script>
-    var wow = new WOW(
-      {
-        boxClass: 'wow',      // animated element css class (default is wow)
-        animateClass: 'animated', // animation css class (default is animated)
-        offset: 0,          // distance to the element when triggering the animation (default is 0)
-        mobile: true,       // trigger animations on mobile devices (default is true)
-        live: true,       // act on asynchronously loaded content (default is true)
-        callback: function (box) {
-          // the callback is fired every time an animation is started
-          // the argument that is passed in is the DOM node being animated
-        },
-        scrollContainer: null // optional scroll container selector, otherwise use window
-      }
-    );
-    wow.init();  
-  </script>
+    </section>
+    <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+        <aside>
+          <p>Copyright © 2024 - All right reserved by Jeremie J Bornais</p>
+        </aside>
+      </footer>
 </body>
 
 </html>

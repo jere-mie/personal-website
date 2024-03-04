@@ -1,0 +1,16 @@
+{
+  "name": "jeremie-website",
+  "version": "1.0.0",
+  "description": "Personal website of Jeremie J Bornais",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -o ./output.css --watch",
+    "build": "npx tailwindcss -o ./output.css --minify"
+  },
+  "author": "Jeremie J Bornais",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "daisyui": "^4.7.2",
+    "tailwindcss": "^3.4.1"
+  }
+}
