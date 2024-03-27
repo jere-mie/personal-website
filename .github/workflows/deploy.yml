@@ -25,7 +25,7 @@ jobs:
                   npm install
                   npm run build
                   mkdir -p dist
-                  cp -r * dist/
+                  rsync -av --exclude='dist' * dist/
             - name: Deploy to GitHub Pages
               if: success()
               uses: crazy-max/ghaction-github-pages@v2
