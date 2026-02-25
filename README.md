@@ -1,31 +1,22 @@
-# Jeremie J Bornais Personal Website
+# Jeremie Bornais Personal Website
 
-Welcome to my personal website repository! This website is built using Tailwind CSS and DaisyUI, alongside vanilla HTML.
+This is a simple, static personal website built with plain HTML and CSS.
 
-## Getting Started
+## Local development
 
-Follow these steps to get started with Tobias Smith's personal website:
+No build tools or dependencies are required.
 
-1. **Clone the Repository**: 
-   ```
+1. Clone the repository:
+
+   ```bash
    git clone https://github.com/jere-mie/personal-website.git
    ```
 
-2. **Navigate to the Project Directory**: 
-   ```
-   cd personal-website
-   ```
+2. Open the project folder.
 
-3. **Install Dependencies**: 
-   ```
-   npm install
-   ```
+3. Launch `index.html` in your browser.
 
-4. **Start Development Server**: 
-   ```
-   npm run dev
-   ```
+## Deploy
 
-5. **Open in Browser**:
-   Visit `http://localhost:3000` in your web browser to view the website.
+Deploy as a static site using any web host or GitHub Pages.
 
